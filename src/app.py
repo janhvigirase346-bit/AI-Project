@@ -1,6 +1,9 @@
-def main():
-    print("AI Project started successfully!")
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-if __name__ == "__main__":
-    main()
+app_name = os.getenv("APP_NAME")
+
+print("Project:", app_name)
+print("Environment setup successful!")
